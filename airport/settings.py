@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import pathlib
+from datetime import timedelta
+
 
 # Build paths inside the project like this: BASE_DIR / ...
 BASE_DIR = pathlib.Path(__file__).parent.parent

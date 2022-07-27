@@ -38,6 +38,8 @@ urlpatterns = [
         views.CancelBooking.as_view(),
         name="cancel-booking",
     ),
+    path("register/", views.UserCreateAPIView.as_view()),
+
     path("book/<int:flight_id>/", views.BookFlight.as_view(), name="book-flight"),
     path("login/", TokenObtainPairView.as_view(), name="login"),
     path("token/refresh/", TokenRefreshView.as_view(), name="token-refresh"),
